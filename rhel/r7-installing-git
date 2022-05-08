@@ -1,0 +1,6 @@
+#ref https://computingforgeeks.com/how-to-install-latest-version-of-git-git-2-x-on-centos-7/
+
+for root user:
+
+yum -y install https://packages.endpointdev.com/rhel/7/os/x86_64/endpoint-repo.x86_64.rpm
+yum install git
