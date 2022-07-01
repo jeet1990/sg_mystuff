@@ -1,0 +1,25 @@
+
+ sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-engine
+
+
+
+
+curl -fsSL https://get.docker.com/ | sh
+
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo systemctl status docker
+
+
+
+sudo usermod -aG docker $(whoami)
+sudo usermod -aG docker username
+
+docker run hello-world
